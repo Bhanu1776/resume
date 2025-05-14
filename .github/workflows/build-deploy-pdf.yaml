@@ -1,0 +1,56 @@
+name: build-deploy-pdf
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - ".github/workflows/**"
+            - "static/**"
+            - "**.tex"
+            - CNAME
+            - "**.html"
+            - favicon.ico
+    pull_request:
+        branches:
+            - main
+        paths:
+            - ".github/workflows/**"
+            - "static/**"
+            - "**.tex"
+            - CNAME
+            - "**.html"
+            - favicon.ico
+    workflow_dispatch: # Allows manual execution of workflow
+
+jobs:
+    build-latex:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  persist-credentials: false
+
+            - name: Compile LaTeX document
+              uses: xu-cheng/latex-action@v3
+              with:
+                  root_file: |
+                      base-resume.tex
+
+            - name: Post Processing
+              run: |
+                  mkdir build
+                  cp -r static/ build/
+                  cp CNAME build/
+                  cp favicon.ico build/
+                  cp *.html build/
+                  cp base-resume.pdf build/
+                  mv build/base-resume.pdf build/bhanu-sunka-resume.pdf
+
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  branch: gh-pages
+                  folder: build
+                  clean: true

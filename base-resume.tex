@@ -1,0 +1,190 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{hyperref}
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{BHANU SUNKA}
+\tagline{Full Stack Developer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \phone{+91-9619349968}
+  \email{sunkabhanu281202@gmail.com}
+%   \phone{000-00-0000}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Mumbai - India}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+  \linkedin{\href{https://www.linkedin.com/in/bhanu1776/}{Linkedin}}
+  \github{\href{https://github.com/Bhanu1776}{Github}}
+  \portfolio{\href{https://bhanuportfolio.vercel.app/}{Portfolio}}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{\textbf{Full-Stack Developer}}{\href{https://roundtechsquare.com/}{RoundTechSquare}}{\textbf{June 2023 -- Present}}{\textbf{Remote}}
+\begin{itemize}
+\item Architected and optimized \textbf{frontend performance} on \textbf{client-facing platforms} using \textbf{Advanced} \textbf{React Patterns}, reducing load times by \textbf{25\%}.
+\item Led \textbf{end-to-end delivery} of \textbf{3+ concurrent client projects} (incl. e-commerce \& B2B portals), achieving \textbf{95\% client satisfaction}.
+\item Led \textbf{UI development} for an \textbf{e-commerce launch} and executed \textbf{UI/UX overhaul} for another client platform, improving user flow.
+\item Resolved critical \textbf{post-launch bugs} (authentication, state management) under pressure for an \textbf{e-commerce platform}, ensuring \textbf{stability}.
+\item Rapidly adapted to requirements, designing and implementing a full \textbf{guest checkout flow} for an \textbf{e-commerce site} overnight.
+\item Proactively developed the\textbf{ 'GCP Media Viewer'} internal tool, which improved workflow. Additionally, I identified and escalated a \textbf{GCP security vulnerability}.
+\item Executed robust \textbf{end-to-end system integrations} for client projects, enhancing performance and \textbf{scalability by 40\%}.
+
+\end{itemize}
+
+\divider
+
+\cvevent {\textbf{React Developer Intern}}{\href{https://drive.google.com/file/d/13vIrjnTaNCF3GDbOpnyO7i07u0kJtUKV/view?usp=sharing}{Parassolutions}}{\textbf{Nov 2023 -- May 2024}}{ \textbf{Mumbai, India}}
+\begin{itemize}
+\item Contributed to two major client projects during the internship period. 
+\smallskip
+\item Developed software facilitating \textbf{banks} and \textbf{fintech clients} to manage pending loan notifications, communicate via SMS, email, and WhatsApp, improving \textbf{client interactions} and operational efficiency.
+\smallskip
+\item Assigned to create a portal for vendors to streamline \textbf{ID} and \textbf{business card ordering}.
+\smallskip
+\item Initiated the development process from scratch using \textbf{React.js} and \textbf{Typescript}, Integrated \textbf{CRUD} operations using \textbf{Redux-toolkit} to enable seamless data management.
+\smallskip
+\item Leveraged \textbf{Tanstack React Query} for efficient API management and data fetching.
+\smallskip
+\item Successfully incorporated \textbf{shadcn} styling, resulting in an aesthetically pleasing and intuitive interface for users.
+\smallskip
+\item Delivered a user-friendly and \textbf{efficient portal}, reducing manual processes and enhancing overall productivity for financial institutions.
+\end{itemize}
+
+%\divider
+
+% \cvevent {\textbf{SDE Intern}}{\href{https://www.itjobxs.com/}{ITJOBXS}}{\textbf{April 2023 -- August 2023}}{ \textbf{Mumbai, India}}
+% \begin{itemize}
+% \item Worked on the design and development part of the \textbf{college management} web application.
+% \smallskip
+% \item Implemented secure login mechanisms and \textbf{role-based access control} for administrators, faculty, and students to ensure data privacy and security.
+% \smallskip
+% \item Achieved a powerful combination of \textbf{Next.js}, \textbf{Firebase}, and \textbf{Ant Design}, resulting in a dynamic, scalable, and visually appealing web application.
+% \smallskip
+% \item Enabled administrators to create, update, and manage course offerings, schedules, and syllabus within the system. Implemented features allowing faculty to upload course materials, assignments, and grades securely.
+% \end{itemize}
+
+
+
+% \divider
+% %\divider
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+\cvsection{TECHNICAL SKILLS}
+\smallskip
+\begin{itemize}
+\item \textbf{Programming Languages: }\small {JavaScript, Typescript, C++}\smallskip
+  \item \textbf{Frameworks:}\small{ ReactJS, NextJs, NodeJS, ExpressJS, Redux}\smallskip
+  \item \textbf{Databases: }\small{SQL, MySQL, MongoDB}
+   \smallskip
+   \item \textbf{Other Skills: }\small{Data Structures, Algorithms, Debugging}\smallskip
+  \item \textbf{Tools: }\small{Git, Github, VS Code, Postman, Vim, Npm}\smallskip
+\end{itemize}
+
+% \cvsection{Coursework Subjects} 
+% \smallskip
+% \begin{itemize}
+% \item \textbf{Operating System}
+% \item \textbf{Computer Networks}
+% \item \textbf{Object Oriented Programming}
+% \item \textbf{Database Management System}
+% \smallskip
+% \end{itemize}
+
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
