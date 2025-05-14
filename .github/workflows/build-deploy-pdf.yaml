@@ -46,7 +46,7 @@ jobs:
                   cp favicon.ico build/
                   cp *.html build/
                   cp base-resume.pdf build/
-                  mv build/base-resume.pdf build/bhanu-sunka-resume.pdf
+                  mv build/base-resume.pdf build/bhanu-resume.pdf
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4
