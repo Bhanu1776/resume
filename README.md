@@ -1,7 +1,7 @@
-# Résumé for Bhanu Sunka
+# Resume
 
--   Base résumé: [resume.itsbhanu.com](https://resume.itsbhanu.com)
--   Embedded base résumé: [resume.itsbhanu.com/embed](https://resume.itsbhanu.com/embed)
+-   Base resume: [resume.itsbhanu.com](https://resume.itsbhanu.com)
+-   Embedded base resume: [resume.itsbhanu.com/embed](https://resume.itsbhanu.com/embed)
 
 Credits:
 
