@@ -20,7 +20,7 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 %% v1.4: Detect TL2018 to handle accented characters in class information
 \@ifl@t@r\fmtversion{2018/04/01}{\UseRawInputEncoding}{}
-\ProvidesClass{altacv}[2018/12/01 AltaCV v1.1.5, yet another alternative class for a resume/curriculum vitae.]
+\ProvidesClass{altacv}[2018/12/01 AltaCV v1.1.5, yet another alternative class for a résumé/curriculum vitae.]
 
 %% v1.1: Optionally load academicons
 \newif\if@academicons
